@@ -1,45 +1,36 @@
-
-
-    <div class="row mt-3">
-      <div class="col"><div class="container mt-4">
-        <div class="row">
-          <div class="col">
-            <label for="id" class="form-label" style="color: #512DA8;">Código:</label>
-            <input type="text" id="id" class="form-control form-control-lg rounded-pill" [(ngModel)]="produto.id" style="background-color: #EDE7F6; color: #512DA8;">
-          </div>
-          <div class="col">
-            <label for="nome" class="form-label" style="color: #512DA8;">Nome do Produto:</label>
-            <input type="text" id="nome" class="form-control form-control-lg rounded-pill" [(ngModel)]="produto.nome" style="background-color: #EDE7F6; color: #512DA8;">
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="descricao" class="form-label" style="color: #512DA8;">Descrição:</label>
-            <textarea id="descricao" class="form-control form-control-lg rounded-pill" rows="3" [(ngModel)]="produto.descricao" style="background-color: #EDE7F6; color: #512DA8;"></textarea>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col">
-            <label for="preco" class="form-label" style="color: #512DA8;">Preço:</label>
-            <div class="input-group">
-              <span class="input-group-text rounded-pill" style="background-color: #EDE7F6; color: #512DA8;">R$</span>
-              <input type="text" id="preco" class="form-control form-control-lg rounded-pill" [(ngModel)]="produto.preco" style="background-color: #EDE7F6; color: #512DA8;">
-            </div>
-          </div>
-          <div class="col">
-            <label for="quantidade" class="form-label" style="color: #512DA8;">Quantidade em Estoque:</label>
-            <input type="text" id="quantidade" class="form-control form-control-lg rounded-pill" [(ngModel)]="produto.quantidade" style="background-color: #EDE7F6; color: #512DA8;">
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col d-flex justify-content-center">
-            <button type="button" class="btn btn-lg rounded-pill" style="background-color: #512DA8; border-color: #512DA8; color: #FFFFFF; width: 200px;" (click)="salvarProduto()">Salvar Produto</button>
-          </div>
-        </div>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col">
+      <label for="id" class="form-label" style="color: #6A1B9A; font-size: 1.2rem; font-weight: bold;">ID do Produto:</label>
+      <input type="text" id="id" class="form-control form-control-lg" [(ngModel)]="produto.id" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;">
+    </div>
+    <div class="col">
+      <label for="nome" class="form-label" style="color: #6A1B9A; font-size: 1.2rem; font-weight: bold;">Nome do Produto:</label>
+      <input type="text" id="nome" class="form-control form-control-lg" [(ngModel)]="produto.nome" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;">
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <label for="descricao" class="form-label" style="color: #6A1B9A; font-size: 1.2rem; font-weight: bold;">Descrição do Produto:</label>
+      <textarea id="descricao" class="form-control form-control-lg" rows="3" [(ngModel)]="produto.descricao" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;"></textarea>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <label for="preco" class="form-label" style="color: #6A1B9A; font-size: 1.2rem; font-weight: bold;">Preço do Produto:</label>
+      <div class="input-group">
+        <span class="input-group-text" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;">R$</span>
+        <input type="text" id="preco" class="form-control form-control-lg" [(ngModel)]="produto.preco" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;">
       </div>
-
-
-      </div>
-
-
-
+    </div>
+    <div class="col">
+      <label for="quantidade" class="form-label" style="color: #6A1B9A; font-size: 1.2rem; font-weight: bold;">Quantidade em Estoque:</label>
+      <input type="text" id="quantidade" class="form-control form-control-lg" [(ngModel)]="produto.quantidade" style="background-color: #F3E5F5; color: #6A1B9A; font-size: 1.2rem;">
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col d-grid gap-2">
+      <button type="button" class="btn btn-lg btn-purple" style="font-size: 1.2rem;">Salvar Produto</button>
+    </div>
+  </div>
+</div>
